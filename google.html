@@ -16,8 +16,10 @@ main {display:flex; flex-direction:column;flex-wrap:nowrap;
 
 #box {margin-left:auto;margin-right:auto;width:fit-content;height:233px;
 ;display:flex;align-content: baseline;}
-textarea{width:300px; border-radius:5px;}
+textarea{width:500px;height:100px border-radius:5px;}
 p {align-self: center;}
+.button {display:inline-flex; flex-direction:row;flex-wrap:nowrap;justify-content:space-evenly;background-color:lightgrey;
+color:black;width:auto; border:black solid 3px}
 </style>
 <body>
     <header>
@@ -31,7 +33,10 @@ p {align-self: center;}
 
 
 <form>
-<p><textarea  type="text" rows="1" columns="80"></textarea>
+<p><textarea  type="text" rows="1" columns="80"></textarea></p>
+
+<p><label class="button" type="button">Google Search</label><label class="button type"button">I'm feeling Lucky</label></p>
+</p>
 </form>
 </div>  
 </main>
