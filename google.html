@@ -1,44 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <style>
-body {background-color:white;}
-div {display: inline-block;
-    padding-left: 15px;
-    color: #000;
-    opacity: 0.75;}
-    a {text-decoration: none;color:black;}
-    a:visited {color;#000}
-    a:hover {text-decoration: underline;}
-header {display:flex; flex-wrap:nowrap;justify-content: space-between;}
-main {display:flex; flex-direction:column;flex-wrap:nowrap;
-    align-items: center;height:400px;  
-    margin-top: 150px; }
-
-#box {margin-left:auto;margin-right:auto;width:fit-content;height:233px;
-;display:flex;align-content: baseline;}
-textarea{width:500px;height:100px border-radius:5px;}
-p {align-self: center;}
-.button {display:inline-flex; flex-direction:row;flex-wrap:nowrap;justify-content:space-evenly;background-color:lightgrey;
-color:black;width:auto; border:black solid 3px}
+p {margin:0; padding:0;}
+body { position: absolute;
+    top: 0;
+    width: 100%;font-family: arial,sans-serif;font-size:13px; margin:0;}
+header {width:100%;margin-top:27px; color:black;}
+a:hover {text-decoration: underline;}
+a {text-decoration: none; padding-left:10px;}
+#topleft {float:left;padding-left:3%;width:47%; color:black;}
+#topright {float:left; padding-right:3%; width:47%;text-align: end;color:black;}
+main {width:100%;height:230px;}
+#box {width:auto;height:100%;float:left; margin-top: 150px;text-align:center;display:flex;
+flex-direction: column;}
+#boxa {width:39%;height:100%;float:left;margin:0;}
+#boxb {width:42%;height:58%;float:left;margin:0;clear:both;}
+textarea {width:180%;height:30px;border-radius: 20px;margin-left:-35%;text-align: center; font: 16px arial,sans-serif;
+    line-height: 34px;margin-top:20px;margin-bottom: 20px;
+    height: 34px !important;letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;text-align: start;opacity:0.75}
+textarea:hover {box-shadow: 3px;
+    
+     box-shadow: dimgrey 10px;}
+.button {background-image: -webkit-linear-gradient(top,#f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;}
+footer {background: #f2f2f2;
+    line-height: 40px;
+    min-width: 980px; font-size:14px;
+    border-top: 1px solid #e4e4e4;clear:both;padding-left: 27px;margin-top:180px;clear:both;color: rgba(0,0,0,.54);}
+#footerbar {background: #f2f2f2;
+    line-height: 40px;
+    min-width: 980px; font-size:14px;
+    border-top: 1px solid #e4e4e4;clear:both;padding:0 0 0 27px;margin-top:0;color: rgba(0,0,0,.54);margin-bottom:0px;}
+    #bottom {color: rgba(0,0,0,.54);}
 </style>
 <body>
     <header>
-<div class="topleft"><a href="">About </a><a href=""> Store</a></div>
-<div class="topright"><a href="">Gmail </a><a href=""> Images</a></div>
+<p id="topleft"><a href="">About    </a><a href="">     Store</a></p>
+<p id="topright"><a href="">Gmail   </a><a href="">     Images</a></p>
 </header>   
 <main>
-
-<div class="box">
-<img src="/home/nick/the_odin_project/google-homepage/googlelogo_color_272x92dp.png"></div>
-
-
-<form>
-<p><textarea  type="text" rows="1" columns="80"></textarea></p>
-
-<p><label class="button" type="button">Google Search</label><label class="button type"button">I'm feeling Lucky</label></p>
-</p>
-</form>
-</div>  
+<p id="boxa">   </p>
+<div id="box">
+<img src="/home/nick/the_odin_project/google-homepage/googlelogo_color_272x92dp.png">
+<form >
+    <p><textarea  type="text" rows="1" columns="80"></textarea></p>
+    
+    <p><label class="button" type="button">Google Search</label><label class="button type">I'm Feeling Lucky</label></p>
+    </p>
+    </form></div>
+<p id="boxb"></p>
 </main>
+<footer>
+    <p><a href="" id="bottom">United Kingdom</a></p>
+</footer>
+<div id="footerbar"><a id="bottom" href="">Advertising  </a> <a id="bottom" href="">Business    </a><a id="bottom" href="">How Search Works</a></div>
+
+
 </body>
 </html>
